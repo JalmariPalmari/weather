@@ -1,8 +1,14 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from "vue"; // Vue kirjasto käyttöön
+import App from "./App.vue"; // juuri komponentti
+import router from "./router"; // reititys asetukset
+import store from "./store"; // säilytys asetukset
 
-Vue.config.productionTip = false
+import "normalize.css"; // Normalize.css normaalityylien palautukseen
+
+Vue.config.productionTip = false;
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  router,
+  store,
+  render: h => h(App)
+}).$mount("#app"); // Tehdään Vue instanssi, joka ajetaan index.html tiedostossa #app elemttti
