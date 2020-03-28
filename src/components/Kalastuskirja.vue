@@ -19,7 +19,7 @@
 
 <script>
 export default {
-  name: 'KalastusKirja ',
+  name: 'kalastus',
   props: {
     kalastusScript: String
   }

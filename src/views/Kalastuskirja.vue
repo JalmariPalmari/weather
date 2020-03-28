@@ -1,18 +1,18 @@
 <template>
-  <div class="hei">
-  <HelloWorld />
+  <div class="kalastuskirja">
+  <Kalastuskirja />
   </div>
 </template>
 
 
 <script>
- import HelloWorld from '@/components/HelloWorld.vue';// Tuodaan komponentit
+ import Kalastuskirja from '@/components/Kalastuskirja.vue';// Tuodaan komponentit
 
 
 export default {
-  name: "hei",
+  name: "kalastuskirja",
   components: { // Rekisteröidään komponentit
-    HelloWorld,
+    Kalastuskirja,
   }
 }
 </script>
