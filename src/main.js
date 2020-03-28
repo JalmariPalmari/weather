@@ -1,7 +1,7 @@
 import Vue from "vue"; // Vue kirjasto käyttöön
 import App from "./App.vue"; // juuri komponentti
-import router from "./router"; // reititys asetukset
-import store from "./store"; // säilytys asetukset
+import router from "./router"; // reititysasetukset
+import store from "./store"; // säilytysasetukset
 
 import "normalize.css"; // Normalize.css normaalityylien palautukseen
 

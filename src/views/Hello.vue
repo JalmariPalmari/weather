@@ -1,21 +1,19 @@
 <template>
-  <div class="home">
-    <weatherWidget />
+  <div class="hei">
+  <HelloWorld />
   </div>
 </template>
 
 
-
-
 <script>
-import weatherWidget from '@/components/weatherWidget.vue'; // Tuodaan komponentit
+ import HelloWorld from '@/components/HelloWorld.vue';// Tuodaan komponentit
+
 
 export default {
-  name: "home",
+  name: "hei",
   components: { // Rekisteröidään komponentit
-    weatherWidget,
+    HelloWorld,
   }
-
 }
 </script>
 
@@ -26,7 +24,7 @@ export default {
 
 
 <style lang="scss" scoped> // Tyylit 🖍️
-  .home {
+  .hei {
     display: flex;
     justify-content: center;
     align-items: center;

@@ -3,12 +3,17 @@
     <div class="nav"> // navbar
       <router-link to="/" class="nav__link">Home</router-link>
       <router-link to="/about" class="nav__link">About</router-link>
+      <router-link to="/hello" class="nav__link">Kalastuskirja</router-link>
     </div>
-    <router-view /> // router views will be rendered here
+    <router-view /> // Reititysnäkymät renderöidään tässä
   </div>
 </template>
 
-<style lang="scss"> // some styles 🖍️
+
+
+
+
+<style lang="scss"> // TYYLIT 🖍️
   @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400&display=swap&subset=cyrillic');
 
   body {

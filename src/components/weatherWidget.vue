@@ -24,7 +24,10 @@
   }
 </script>
 
-<style lang="scss" scoped> // some styles 🖍️
+
+
+
+<style lang="scss" scoped> // Sään tyylit 🖍️
   .weather-widget {
     display: flex;
     flex-direction: column;

@@ -2,17 +2,17 @@ import Vue from "vue";
 import Vuex from "vuex";
 
 import service from "@/services/service.js"; // service.js hakee datan APIsta.
-Vue.use(Vuex); // tell Vue to action with Vuex
+Vue.use(Vuex); // Kertoo Vuelle, että käytetään Vuex
 
 export default new Vuex.Store({
   state: { // määritellään mitä dataa halutaan säilöä
     weather: {},
     dataIsRecived: false
   },
-  mutations: { // muutetaan statea tässä
+  mutations: { // muutetaan tilaa tässä
     UPDATE_WEATHER(state) {
       service
-        .getWeather() // kutsuu funktiota service.ja tiedostosta, joka palauttaa datan APIsta.
+        .getWeather() // kutsuu funktiota service.js tiedostosta, joka palauttaa datan APIsta.
         .then(response => { // Jos vastaus saadaan
           state.weather = response.data.data[0]; // asetetaan weather objektille data
           state.dataIsRecived = true; // merkitään, että data on saatu
