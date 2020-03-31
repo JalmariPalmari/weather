@@ -5,17 +5,16 @@
       <div>
         <main>
 <div class="searchbox">
-<input type="text" class="searchbar" placeholder="Etsi..." v-model="query" @keyup.enter="getWeather" />
+<input type="text" class="searchbar" placeholder="Etsi sää kaupungin mukaan" v-model="query" @keyup.enter="getWeather" />
 </div>
 
   <!--Jos tietoja ei vielä ole haettu/määritetty, niitä ei näytetä-->
-<div class="weather-wrap" v-if="typeof weather.main != 'undefined'"> 
+<div class="weather-wrap" v-if="typeof weatherData.main != 'undefined'"> 
   <div class="location-box">
-    <div class="location"> {{ weather.name }}, {{ weather.sys.country }} </div>
-    <div class="date"> Monday 20 January 2020</div>
+    <div class="location"> {{ weatherData.name }}, {{ weatherData.sys.country }} </div>
   </div>
     <div class="weather-box">
-    <div class="temp"> {{Math.round(weather.name.temp)}} c</div>
+    <div class="temp"> {{Math.round(weatherData.main.temp)}} c</div>
     <div class="weather"> Rain</div>
   </div>
 </div>
@@ -44,10 +43,9 @@ export default {
     },
      getWeather () { 
        {
-          fetch(`${this.url_base}weather?q=${this.query}&appid=${this.api_key}`)
+          fetch(`${this.url_base}weather?q=${this.query}&units=metric&appid=${this.api_key}`)
           .then(res => {
             return res.json();
-
           }).then(this.setResults); 
         }
       },
@@ -56,11 +54,8 @@ export default {
       }
   
   },
-      computed: {
-             weather() {
-        return this.$store.state.weather
-      }
-    },
+
+    
    
 }
 

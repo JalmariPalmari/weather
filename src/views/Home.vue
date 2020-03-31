@@ -1,7 +1,6 @@
 <template>
   <div class="home">
     <weatherWidget />
-    <yhteystiedot />
   </div>
 </template>
 

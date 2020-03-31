@@ -1,17 +1,17 @@
 <template>
   <div>
-  <KalastuskirjaComponentti />
+  <SaakirjaComponentti />
   </div>
 </template>
 
 
 <script>
- import KalastuskirjaComponentti from '@/components/Saakirja-componentti.vue';// Tuodaan komponentit
+ import SaakirjaComponentti from '@/components/Saakirja-componentti.vue';// Tuodaan komponentit
 
 
 export default {
   components: { // Rekisteröidään komponentit
-    KalastuskirjaComponentti,
+    SaakirjaComponentti,
   }
 }
 </script>
