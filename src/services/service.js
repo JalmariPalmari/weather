@@ -15,3 +15,4 @@ export default {
     return apiClient.get();
   }
 };
+

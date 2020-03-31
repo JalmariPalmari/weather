@@ -3,7 +3,6 @@ import App from "./App.vue"; // juuri komponentti
 import router from "./router"; // reititysasetukset
 import store from "./store"; // säilytysasetukset
 
-import "normalize.css"; // Normalize.css normaalityylien palautukseen
 
 Vue.config.productionTip = false;
 

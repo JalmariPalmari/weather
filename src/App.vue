@@ -1,14 +1,12 @@
 <template>
-  <div id="app"> // root
-    <div class="nav"> // navbar
-      <router-link to="/" class="nav__link">Home</router-link>
-      <router-link to="/about" class="nav__link">About</router-link>
-      <router-link to="/hello" class="nav__link">Kalastuskirja</router-link>
+  <div id="app"> 
+    <div class="nav">
+      <router-link to="/" class="nav_link">Home</router-link>
+      <router-link to="/saakirja" class="nav_link">Sääkirja</router-link>
     </div>
-    <router-view /> // Reititysnäkymät renderöidään tässä
+    <router-view />
   </div>
 </template>
-
 
 
 
@@ -21,7 +19,7 @@
     max-height: 100vh;
   }
 
-  a {
+  .nav {
     color: #153B50;
     text-decoration-color: rgba($color: #153B50, $alpha: 0.5);
     transition: all 0.3s ease;
@@ -32,6 +30,7 @@
   }
 
   .nav {
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,7 +41,7 @@
     width: 100%;
   }
 
-  .nav__link {
+  .nav_link {
     &:not(:last-child) {
       margin-right: 15px;
     }

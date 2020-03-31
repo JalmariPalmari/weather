@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <weatherWidget />
+    <yhteystiedot />
   </div>
 </template>
 
@@ -13,7 +14,7 @@ import weatherWidget from '@/components/weatherWidget.vue'; // Tuodaan komponent
 export default {
   name: "home",
   components: { // Rekisteröidään komponentit
-    weatherWidget,
+    weatherWidget
   }
 
 }

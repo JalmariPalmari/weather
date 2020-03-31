@@ -1,12 +1,13 @@
 <template>
   <div>
     <div v-if="this.$store.state.dataIsRecived" class="weather-widget"> // widget itself
-      <p class="weather-widget__city">{{ weather.city_name }}</p>
-      <h2 class="weather-widget__temp">{{ weather.temp }}<span>°C</span></h2>
-      <p class="weather-widget__status">{{ weather.weather.description }}</p>
+      <p class="weather-widget_city">{{ weather.city_name }}</p>
+      <h2 class="weather-widget_temp">{{ weather.temp }}<span>°C</span></h2>
+      <p class="weather-widget_status">Sään kuvaus:  {{ weather.weather.description }}</p>
+      <div class="sunrise">Auringonnousu: {{ weather.sunrise }} </div>
+       <div class="sunset">Auringonlasku: {{ weather.sunset }} </div>
     </div>
     <div v-else class="weather-widget"> // preloader
-      <img src="spinner.svg" alt="">
     </div>
   </div>
 </template>
@@ -24,9 +25,6 @@
   }
 </script>
 
-
-
-
 <style lang="scss" scoped> // Sään tyylit 🖍️
   .weather-widget {
     display: flex;
@@ -35,12 +33,26 @@
     color: #429EA6;
   }
 
-  .weather-widget__city {
+  .weather-widget_city {
     font-size: 20px;
     margin: 0;
   }
+  .sunrise {
+    border-style:dotted;
+    border-color: yellow;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+  }
+    .sunset {
+    border-style:dotted;
+    border-color: orange;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+  }
 
-  .weather-widget__temp {
+  .weather-widget_temp {
     display: flex;
     align-items: flex-start;
     color: #16F4D0;
@@ -55,8 +67,11 @@
     }
   }
 
-  .weather-widget__status {
+  .weather-widget_status {
+    border-style:double;
+    border-color: lawngreen;
     font-size: 20px;
-    margin: 0;
+    margin: 10px;
+    padding: 10px;
   }
 </style>
