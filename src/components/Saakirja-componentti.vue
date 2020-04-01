@@ -1,26 +1,23 @@
-
 <template>
   <div id="weather">
     <h3>{{ toivotus() }}</h3>
-      <div>
+      
         <main>
 <div class="searchbox">
 <input type="text" class="searchbar" placeholder="Etsi sää kaupungin mukaan" v-model="query" @keyup.enter="getWeather" />
 </div>
-
   <!--Jos tietoja ei vielä ole haettu/määritetty, niitä ei näytetä-->
 <div class="weather-wrap" v-if="typeof weatherData.main != 'undefined'"> 
   <div class="location-box">
     <div class="location"> {{ weatherData.name }}, {{ weatherData.sys.country }} </div>
   </div>
     <div class="weather-box">
-    <div class="temp"> {{Math.round(weatherData.main.temp)}} c</div>
-    <div class="weather"> Rain</div>
+    <div class="temp"> {{Math.round(weatherData.main.temp)}} </div>
+    <div class="weathedescription"> {{ weatherData.weather[0].description }}TÄSSÄ</div>
   </div>
 </div>
 </main>
 </div>
-
     </div>
     
 </template>
@@ -52,11 +49,7 @@ export default {
       setResults(results) {
          this.weatherData = results;
       }
-  
   },
-
-    
-   
 }
 
 </script>
@@ -84,11 +77,7 @@ h3 {
   color: #222;
   font-size: 40;
 }
-h1 {
-  background: lightgreen;
-  padding: 20px;
-  text-align: center;
-}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -145,5 +134,8 @@ main {
 .weather-box .weather {
   text-align: center;
   text-shadow: 1px 1px;
+}
+.weatherdescription {
+  font-size: 100px;
 }
 </style>
