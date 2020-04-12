@@ -1,15 +1,12 @@
 <template>
   <div id="app"> 
     <div class="nav">
-      <router-link to="/" class="nav_link">Home</router-link>
+      <router-link to="/" class="nav_link">Säätiedot</router-link>
       <router-link to="/saakirja" class="nav_link">Sääkirja</router-link>
     </div>
     <router-view />
   </div>
 </template>
-
-
-
 
 <style lang="scss"> // TYYLIT 🖍️
   @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400&display=swap&subset=cyrillic');

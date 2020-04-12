@@ -1,13 +1,13 @@
 <template>
   <div>
-    <div v-if="this.$store.state.dataIsRecived" class="weather-widget"> // widget itself
+    <div v-if="this.$store.state.dataIsRecived" class="weather-widget">
       <p class="weather-widget_city">{{ weather.city_name }}</p>
       <h2 class="weather-widget_temp">{{ weather.temp }}<span>°C</span></h2>
       <p class="weather-widget_status">Sään kuvaus:  {{ weather.weather.description }}</p>
       <div class="sunrise">Auringonnousu: {{ weather.sunrise }} </div>
        <div class="sunset">Auringonlasku: {{ weather.sunset }} </div>
     </div>
-    <div v-else class="weather-widget"> // preloader
+    <div v-else class="weather-widget"> 
     </div>
   </div>
 </template>
@@ -16,11 +16,11 @@
   export default {
     computed: {
       weather() {
-        return this.$store.state.weather // gets weather state from Vuex store
+        return this.$store.state.weather // hakee säätiedot Vuexista
       }
     },
     created() {
-      this.$store.dispatch("updateWeather"); // dispatch "updateWeather" when component is created
+      this.$store.dispatch("updateWeather"); // Ajaa, kun komponentti on luotu
     }
   }
 </script>
