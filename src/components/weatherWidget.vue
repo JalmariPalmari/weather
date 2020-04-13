@@ -6,9 +6,7 @@
       <p class="weather-widget_status">Sään kuvaus:  {{ weather.weather.description }}</p>
       <div class="sunrise">Auringonnousu: {{ weather.sunrise }} </div>
        <div class="sunset">Auringonlasku: {{ weather.sunset }} </div>
-    </div>
-    <div v-else class="weather-widget"> 
-    </div>
+     </div>
   </div>
 </template>
 

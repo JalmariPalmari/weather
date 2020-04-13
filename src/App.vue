@@ -17,7 +17,7 @@
     font-family: 'Montserrat', sans-serif;
     max-height: 100vh;
   }
-
+  
   a {
     color: rgb(95, 199, 255);
     text-decoration-color: rgba($color: #153B50, $alpha: 0.5);

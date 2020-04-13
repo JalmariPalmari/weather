@@ -3,9 +3,9 @@
   <div id="weather" :class="typeof weatherData.main != 'undefined' && weatherData.main.temp < 0 ? 'cold' : '' " > 
     <h3>{{ otsikko() }}</h3>
         <main>
-<div class="searchbox">
-<input type="text" class="searchbar" placeholder="Etsi sää kaupungin mukaan" v-model="query" @keyup.enter="getWeather" @click="toggleClass()">
-</div>
+  <div class="searchbox">
+    <input type="text" class="searchbar" placeholder="Etsi sää kaupungin mukaan" v-model="query" @keyup.enter="getWeather" @click="toggleClass()">
+  </div>
 
   <!--Jos tietoja ei vielä ole haettu/määritetty, niitä ei näytetä-->
 <div class="weather-wrap" v-if="typeof weatherData.main != 'undefined'"> 
