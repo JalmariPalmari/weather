@@ -22,6 +22,8 @@ Third task was to make something usefull
 
 Project was good for learning basics of Vue, API and CLI
 
+## App address: https://dos.seamk.fi/~epedu+k1901126/
+
 ## Project setup
 ```
 npm install
