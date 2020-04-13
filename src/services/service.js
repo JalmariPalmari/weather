@@ -3,7 +3,7 @@ import { CURRENT_WEATHER } from "@/constants"; // URL osoite, jonka mukana kysel
 
 const apiClient = axios.create({ // Luodaan lupaus, joka hakee HTTP pyynnöllä Weatherbit palvelusta säätiedot
   baseURL: CURRENT_WEATHER,
-  withCredentials: false, // CORS
+  withCredentials: false,
   headers: { // HTTP otsikot
     Accept: "application/json",
     "Content-Type": "application/json"

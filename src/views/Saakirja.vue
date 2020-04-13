@@ -4,7 +4,6 @@
   </div>
 </template>
 
-
 <script>
  import SaakirjaComponentti from '@/components/Saakirja-componentti.vue';// Tuodaan komponentit
 
@@ -15,12 +14,6 @@ export default {
   }
 }
 </script>
-
-
-
-
-
-
 
 <style lang="scss" scoped> // Tyylit 🖍️
   .hei {

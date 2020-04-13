@@ -4,9 +4,6 @@
   </div>
 </template>
 
-
-
-
 <script>
 import weatherWidget from '@/components/weatherWidget.vue'; // Tuodaan komponentit
 
@@ -18,12 +15,6 @@ export default {
 
 }
 </script>
-
-
-
-
-
-
 
 <style lang="scss" scoped> // Tyylit 🖍️
   .home {

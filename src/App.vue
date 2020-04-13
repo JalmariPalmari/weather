@@ -1,4 +1,5 @@
 <template>
+<body>
   <div id="app"> 
     <div class="nav">
       <router-link to="/" class="nav_link">Säätiedot</router-link>
@@ -6,6 +7,7 @@
     </div>
     <router-view />
   </div>
+</body>
 </template>
 
 <style lang="scss"> // TYYLIT 🖍️
@@ -16,18 +18,15 @@
     max-height: 100vh;
   }
 
-  .nav {
-    color: #153B50;
+  a {
+    color: rgb(95, 199, 255);
     text-decoration-color: rgba($color: #153B50, $alpha: 0.5);
     transition: all 0.3s ease;
-
     &:hover {
-      text-decoration-color: #153B50;
+      text-decoration-color: rgb(0, 53, 82);
     }
   }
-
   .nav {
-   
     display: flex;
     justify-content: center;
     align-items: center;
