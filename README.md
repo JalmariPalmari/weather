@@ -15,7 +15,7 @@ Second task was to learn CLI interface
   - Learn more about interactive css
 
 Third task was to make something usefull
-  - In second page sääkirja have userinterface
+  - In second page sääkirja is userinterface
   - User can search weather by typing city name
   - UI get data from API and shows location, temparature and description of weather in finnish language
   - If temparature is below 0 degrees, background change to winter
