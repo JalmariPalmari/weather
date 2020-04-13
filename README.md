@@ -24,6 +24,8 @@ Project was good for learning basics of Vue, API and CLI
 
 ## App address: https://dos.seamk.fi/~epedu+k1901126/
 
+## Used this project for testing and learning: https://dev.to/oxyyyyy/simple-weather-app-on-vue-js-1g20
+
 ## Project setup
 ```
 npm install
